@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            color:white;
+            position: absolute;
+            top:200px;
+            left:200px;
+            transition: all 1s ease-in; 
+            
+        }
+        div:hover{
+            background-color: rgb(143, 18, 201);
+            /* transform: rotate(180deg) scale(4); */
+            /* transform: translateY(300px); */
+            /* transform: translatex(200px); */
+            /* transform: translate(100px,120px); */
+            transform: skew(90deg);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div>THIS IS BOX1</div>
+</body>
+</html>

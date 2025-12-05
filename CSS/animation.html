@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <style>
+        body{
+            background-image: url("cat.jpg.jpg");
+            background-size: cover;
+        }
+        #div1{
+            height: 100px;
+            width:100px;
+            background-color: rgb(203, 218, 213);
+            border:2px dotted black;
+            border-radius: 50%;
+            position: absolute;
+            top:300px;
+            left:200px;
+            animation-duration: 0.25s;
+            animation-name: positionAnimate1;
+            /* animation-name: colorAnimate; */
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            /* animation-timing-function: steps(4); */
+            animation-delay:0s ;
+            
+        }
+        /* @keyframes colorAnimate{
+            from{background-color: aquamarine;}
+            to{background-color: blueviolet;}
+        } */
+         @keyframes positionAnimate1{
+            from{top:600px;}
+            to{right:60px;}
+         }
+
+        #div2{
+            height: 100px;
+            width:100px;
+            background-color: rgb(175, 20, 172);
+            border:2px dotted black;
+            border-radius: 50%;
+            position: absolute;
+            bottom:200px;
+            right:400px;
+            animation-duration: 0.75s;
+            animation-name: positionAnimate2;
+            /* animation-name: colorAnimate; */
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            /* animation-timing-function: steps(4); */
+            animation-delay:0s ;
+            
+        }
+        @keyframes positionAnimate2{
+            from{top:300px;}
+            to{top:60px;}
+         }
+        #div3{
+            height: 100px;
+            width:100px;
+            background-color: rgb(140, 201, 27);
+            border:2px solid black;
+            border-radius: 50%;
+            position: absolute;
+            top:200px;
+            right:200px;
+            /* you can use shorthand */
+            animation:positionanimate3 2s linear 0s infinite normal;
+        }
+         @keyframes positionanimate3{
+            0%
+            {
+                left:40px;
+                background-color:rgb(140, 201, 27) ;
+            }
+            50%
+            {
+                background-color: blue;
+            }
+            100%
+            {
+                left:200px;
+                background-color: brown;
+                color:white;
+            }
+         }
+    </style>
+</head>
+<body>
+    <div id="div1">This is box 1</div>
+    <div id="div2">this is box 2</div>
+    <div id="div3">this is box 3</div>
+</body>
+</html>
